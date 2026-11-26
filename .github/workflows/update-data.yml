@@ -16,7 +16,7 @@ jobs:
       - name: Descargar y validar datos reales
         env:
           API_NINJAS_KEY: ${{ secrets.API_NINJAS_KEY }}
-        run: python scripts/update_data.py
+        run: python Scripts/update_data.py
       - name: Guardar cambios si hubo actualización
         run: |
           git config user.name "github-actions[bot]"
